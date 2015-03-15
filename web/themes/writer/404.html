@@ -1,0 +1,20 @@
+<?php $this->layout('theme::error') ?>
+
+<?php $this->start('title') ?><?= $meta['title'] ?><?php $this->stop() ?>
+
+<?php $this->start('body') ?>
+    <div class="hero-image-404"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <h1 class="title-404">Page not found</h1>
+                <p class="p-404">Sorry, but the page you were trying to view does not exist.</p>
+
+                <?php $post = $this->query()->where('type', 'post')->sortByDesc('published')->first() ?>
+                <p class="p-404">
+                    Perhaps you were looking for "<a href="/<?= $post['id'] ?>"><?= $post['title'] ?></a>" from <?= $post['published'] ?>?
+                </p>
+            </div>
+        </div>
+    </div>
+<?php $this->stop() ?>

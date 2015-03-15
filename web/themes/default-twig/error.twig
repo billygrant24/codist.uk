@@ -1,0 +1,30 @@
+{% extends '@theme/layouts/master.twig' %}
+
+{% block title %}Uh-oh…{% endblock %}
+
+{% block content %}
+    <header class="intro-header" style="background-image: url('{{ themeDir }}/assets/img/robots.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1>Uh-oh…</h1>
+                        <hr class="small">
+                        <span class="subheading">I couldn't find the page you were looking for.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {% for post in query({'type': 'post', 'orderBy': 'published DESC', 'limit': 1}) %}
+                    <p>If you still can't find what you're looking for, why not read my latest blog post: "<a href="/{{ post.id }}">{{ post.title }}</a>" from {{ post.published }}.</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+<?php $this->layout('theme::base') ?>
+
+<?php $this->start('title') ?><?= $meta['title'] ?><?php $this->stop() ?>
+
+<?php $this->start('body') ?>
+<div class="col-xs-12 main-content single-content">
+    <p class="meta">
+        <a class="" href="category.html"><?= $meta['author']['name'] ?></a> on <?= $meta['published'] ?> <i
+            class="link-spacer"></i> <i class="entypo-bookmark"></i> <?= $meta['readingTime'] ?>
+    </p>
+    <h1><?= $meta['title'] ?></h1>
+    <p class="subtitle"><?= $meta['summary'] ?></p>
+    <hr/>
+    <?= $content ?>
+    <div class="single-footer">
+        <!--<div class="social clearfix">-->
+            <!--<a class="btn btn-writer btn-like" href="#"><i class="entypo-heart"></i>Like</a>-->
+            <!--<img src="<?= $themeDir ?>/img/profile-2.jpg" class="liked-this-icon" alt="user-image">-->
+            <!--<img src="<?= $themeDir ?>/img/profile-3.jpg" class="liked-this-icon" alt="user-image">-->
+            <!--<img src="<?= $themeDir ?>/img/profile-5.png" class="liked-this-icon" alt="user-image">-->
+            <!--<a class="social-icon" href="#">-->
+                <!--<i class="entypo-twitter"></i>-->
+            <!--</a>-->
+            <!--<a class="social-icon" href="#">-->
+                <!--<i class="entypo-facebook-squared"></i>-->
+            <!--</a>-->
+        <!--</div>-->
+        <div class="category-list">
+            <p>Also found in</p>
+            <ul>
+                <?php foreach ($meta['tags'] as $tag): ?>
+                <li><a href="#"><?= $tag ?></a></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    </div>
+</div>
+<?php $this->stop() ?>
