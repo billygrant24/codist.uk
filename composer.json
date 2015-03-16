@@ -1,21 +1,7 @@
 {
-    "name": "williamgb/songbird-skeleton",
-    "description": "A skeleton project for Songbird, a simple site generator for PHP",
+    "name": "williamgb/codist",
+    "description": "Personal blog of William Grant-Buckley",
     "license": "MIT",
-    "repositories": [
-        {
-            "type":"vcs",
-            "url":"/home/vagrant/Code/williamgb/songbird"
-        },
-        {
-            "type":"vcs",
-            "url":"/home/vagrant/Code/williamgb/songbird-commonmark"
-        },
-        {
-            "type":"vcs",
-            "url":"/home/vagrant/Code/williamgb/songbird-plates"
-        }
-    ],
     "require": {
         "williamgb/songbird": "dev-master",
         "williamgb/songbird-commonmark": "dev-master",
@@ -24,7 +10,7 @@
     "authors": [
         {
             "name": "William Grant-Buckley",
-            "email": "ahoy@williambuckley.co.uk"
+            "email": "william@codist.uk"
         }
     ],
     "autoload": {
