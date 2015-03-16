@@ -1,7 +1,7 @@
 ---
 extends: 'schema/post'
 title: 'Thoughts on programming from Robert C Martin'
-summary: 'Recommended viewing for anyone who writes code.'
+summary: 'Recommended viewing for anyone who writes code for a living.'
 cover: 'bench.jpeg'
 tags: ['Programming', 'Computer Science', 'Inspiration']
 published: '2014-03-15'
