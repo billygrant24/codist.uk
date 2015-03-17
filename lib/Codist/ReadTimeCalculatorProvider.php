@@ -9,16 +9,6 @@ class ReadTimeCalculatorProvider extends PackageProviderAbstract
 {
     /**
      * @param \League\Container\ContainerInterface $app
-     *
-     * @return mixed|void
-     */
-    public function registerPackage(ContainerInterface $app)
-    {
-        // ...
-    }
-
-    /**
-     * @param \League\Container\ContainerInterface $app
      * @param \Songbird\Event\Event                $event
      */
     protected function registerEventListeners(ContainerInterface $app, Event $event)

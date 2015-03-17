@@ -1,13 +1,14 @@
 ---
 extends: 'schema/post'
-title: 'Thoughts on programming from Robert C Martin'
+title: 'Thoughts on programming from Uncle Bob'
 summary: 'Recommended viewing for anyone who writes code for a living.'
-cover: 'bench.jpeg'
 tags: ['Programming', 'Computer Science', 'Inspiration']
 published: '2014-03-15'
 ---
 
-Robert C Martin, better known as Uncle Bob, is one of the most influential software engineers in the world today. Here are some of his most fascinating talks.
+Robert C. Martin, aka, Uncle Bob has been a software professional since 1970 and an international software consultant since 1990. In the last 40 years, he has worked in various capacities on literally hundreds of software projects.
+
+He has authored "landmark" books on Agile Programming, Extreme Programming, UML, Object-Oriented Programming,  C++ Programming and most recently Clean Code and Clean Coder.
 
 ## What Killed Smalltalk Could Kill Ruby, Too
 2009, RailsConf
