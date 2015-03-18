@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e5c3227b9160cfa6dcc850ef13d02647",
+    "hash": "bbc0675941b5310efeecfc6a0acdd1af",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -1145,8 +1145,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "/home/vagrant/Code/williamgb/songbird",
-                "reference": "2cf5dc0c1ce316175ead61083a0be6943936dacf"
+                "url": "https://github.com/williamgb/songbird.git",
+                "reference": "076a9ef59624de6c760089f0c5041645b35d1e45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/williamgb/songbird/zipball/076a9ef59624de6c760089f0c5041645b35d1e45",
+                "reference": "076a9ef59624de6c760089f0c5041645b35d1e45",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "~5.0",
@@ -1167,6 +1173,7 @@
                     "Songbird\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1177,7 +1184,7 @@
                 }
             ],
             "description": "A site generator for PHP",
-            "time": "2015-03-15 21:12:55"
+            "time": "2015-03-17 02:43:25"
         },
         {
             "name": "williamgb/songbird-commonmark",
@@ -1207,6 +1214,39 @@
             ],
             "description": "CommonMark service provider for Songbird",
             "time": "2015-03-15 21:14:05"
+        },
+        {
+            "name": "williamgb/songbird-jsonable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/williamgb/songbird-jsonable.git",
+                "reference": "cd785e45e065caf0713762b64ac02e62a47c2044"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/williamgb/songbird-jsonable/zipball/cd785e45e065caf0713762b64ac02e62a47c2044",
+                "reference": "cd785e45e065caf0713762b64ac02e62a47c2044",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Songbird\\Package\\Jsonable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Grant-Buckley",
+                    "email": "william@wcodist.uk"
+                }
+            ],
+            "description": "Allow content to be served as json in Songbird",
+            "time": "2015-03-17 13:13:52"
         },
         {
             "name": "williamgb/songbird-plates",
@@ -1245,7 +1285,8 @@
     "stability-flags": {
         "williamgb/songbird": 20,
         "williamgb/songbird-commonmark": 20,
-        "williamgb/songbird-plates": 20
+        "williamgb/songbird-plates": 20,
+        "williamgb/songbird-jsonable": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

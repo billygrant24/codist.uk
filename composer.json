@@ -5,7 +5,8 @@
     "require": {
         "williamgb/songbird": "dev-master",
         "williamgb/songbird-commonmark": "dev-master",
-        "williamgb/songbird-plates": "dev-master"
+        "williamgb/songbird-plates": "dev-master",
+        "williamgb/songbird-jsonable": "dev-master"
     },
     "authors": [
         {

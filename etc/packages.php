@@ -10,6 +10,7 @@ return [
 
         'Songbird\Package\CommonMark\CommonMarkProvider',
         'Songbird\Package\Plates\PlatesProvider',
+        'Songbird\Package\Jsonable\JsonableProvider',
         'Codist\ReadTimeCalculatorProvider',
 
     ],
