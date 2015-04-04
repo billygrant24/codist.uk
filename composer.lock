@@ -413,7 +413,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "League\\Event\\": "src/"
+                    "League\\Emitter\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -426,7 +426,7 @@
                     "email": "info@frenky.net"
                 }
             ],
-            "description": "Event package",
+            "description": "Emitter package",
             "keywords": [
                 "emitter",
                 "event",

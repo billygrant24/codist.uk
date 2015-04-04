@@ -1,16 +1,9 @@
 <?php
 
-use Songbird\AppFactory;
-use Symfony\Component\HttpFoundation\Request;
-
 $loader = require __DIR__ . '/../vendor/autoload.php';
 
-$app = AppFactory::createApplication(__DIR__ . '/../etc');
+$app = Songbird\AppFactory::createApplication(__DIR__ . '/../config');
 
-if ($app->config('app.debug')) {
-    $app->startDebugging();
-}
-
-$response = $app->run(Request::createFromGlobals());
+$response = $app->run();
 
 $response->send();

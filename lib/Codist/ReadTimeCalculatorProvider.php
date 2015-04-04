@@ -1,20 +1,18 @@
 <?php
 namespace Codist;
 
-use League\Container\ContainerInterface;
-use Songbird\Event\Event;
+use League\Event\Emitter;
 use Songbird\PackageProviderAbstract;
 
 class ReadTimeCalculatorProvider extends PackageProviderAbstract
 {
     /**
-     * @param \League\Container\ContainerInterface $app
-     * @param \Songbird\Event\Event                $event
+     * @param \League\Event\Emitter $event
      */
-    protected function registerEventListeners(ContainerInterface $app, Event $event)
+    protected function registerEventListeners(Emitter $event)
     {
-        $event->addListener('PrepareDocument', function ($event, $args) use ($app) {
-            $args['document']['readingTime'] = $this->calculate($args['document']['body']);
+        $event->addListener('ContentEvent', function ($event) {
+            $event->content['readingTime'] = $this->calculate($event->content['body']);
         });
     }
 

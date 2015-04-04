@@ -31,7 +31,7 @@
         <a href="#" class="select-posts active">Posts</a>
     </div>
     <div class="home-page-posts animated fadeIn ">
-        <?php $posts = $this->query()->where('type', 'post')->sortByDesc('published') ?>
+        <?php $posts = $repository->where('type', 'post')->sortByDesc('published') ?>
         <?php foreach ($posts->paginate(1) as $post): ?>
             <div class="post">
                 <section>

@@ -33,19 +33,12 @@ return [
         ],
 
         /*
-         * Set the HTTP request handler.
-         * See default implementation for details on how to create a custom handler.
-         */
-
-        'handler' => 'Songbird\Controller',
-
-        /*
          * These are some essential application paths.
          */
 
         'paths' => [
 
-            'resources' => '../resources',
+            'resources' => '../content',
 
             'log' => '../var/log',
 
