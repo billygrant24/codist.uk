@@ -31,7 +31,7 @@ return [
          * The date format to use when converting timestamps.
          */
 
-        'dateFormat' => 'jS F Y',
+        'dateFormat' => 'jS F, Y',
 
         /*
          * Sets the word limit for excerpts.

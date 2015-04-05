@@ -38,7 +38,7 @@
                     <div class="post-preview col-xs-12  no-gutter">
                         <h2><a href="/<?= $post['id'] ?>"><?= $post['title']?></a></h2>
                         <p><?= !isset($post['summary']) ? '' : $post['summary'] ?></p>
-                        <p class="meta"><?= date($dateFormat, time(DateTime::createFromFormat('Y-m-d', $post['published']))) ?></p>
+                        <p class="meta"><?= date($dateFormat, DateTime::createFromFormat('Y-m-d', $post['published'])->getTimestamp()) ?></p>
                     </div>
                 </section>
             </div>
